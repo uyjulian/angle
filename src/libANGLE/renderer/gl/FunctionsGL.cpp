@@ -902,6 +902,12 @@ void FunctionsGL::initializeProcsDesktopGL()
     ASSIGN_WITH_EXT("GL_EXT_texture_storage GL_EXT_direct_state_access", "glTextureStorage2DEXT", textureStorage2D);
     ASSIGN_WITH_EXT("GL_EXT_texture_storage GL_EXT_direct_state_access GL_EXT_texture3D", "glTextureStorage3DEXT", textureStorage3D);
 
+    // GL_APPLE_vertex_array_object
+    ASSIGN_WITH_EXT("GL_APPLE_vertex_array_object", "glBindVertexArray", bindVertexArray);
+    ASSIGN_WITH_EXT("GL_APPLE_vertex_array_object", "glDeleteVertexArrays", deleteVertexArrays);
+    ASSIGN_WITH_EXT("GL_APPLE_vertex_array_object", "glGenVertexArrays", genVertexArrays);
+    ASSIGN_WITH_EXT("GL_APPLE_vertex_array_object", "glIsVertexArray", isVertexArray);
+
     // GL_ARB_vertex_array_object
     ASSIGN_WITH_EXT("GL_ARB_vertex_array_object", "glBindVertexArray", bindVertexArray);
     ASSIGN_WITH_EXT("GL_ARB_vertex_array_object", "glDeleteVertexArrays", deleteVertexArrays);
